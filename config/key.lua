@@ -3,7 +3,6 @@ local act = wezterm.action
 
 local config = {}
 
-
 -- ショートカットキー設定
 config.keys = {
 	-- カーソルを一単語後ろに移動
