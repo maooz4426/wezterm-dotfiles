@@ -1,9 +1,11 @@
 local wezterm = require("wezterm")
 local act = wezterm.action
 
-return {
+local config = {}
+
+
 -- ショートカットキー設定
-keys = {
+config.keys = {
 	-- カーソルを一単語後ろに移動
   {
     key = "LeftArrow",
@@ -32,5 +34,5 @@ keys = {
     },
   },
 }
-}
 
+return config
