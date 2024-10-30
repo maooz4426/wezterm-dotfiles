@@ -2,13 +2,25 @@ local wezterm = require("wezterm")
 local config = {}
 local mux = wezterm.mux
 
+
 -- ウィンドウ設定
 config.window_decorations = "RESIZE"
-config.window_background_opacity = 0.75
-config.macos_window_background_blur = 10
-config.window_background_gradient = {
-    colors = { "#000000" },
+config.macos_window_background_blur = 20
+config.background ={
+    {
+        source = {
+          File = wezterm.home_dir .. "/.config/wezterm/evamark6.jpeg",
+        },
+        -- opacity = 0.8,
+        hsb = {
+            brightness = 0.1,     
+
+        },
+      
+      },  
+   
 }
+
 
 -- ウィンドウフレーム設定
 config.window_frame = {
